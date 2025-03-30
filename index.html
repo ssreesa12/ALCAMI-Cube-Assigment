@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="bg-gray-100">
+
+    <div class="bg-yellow-900 text-white text-center py-2">
+        GET 25% OFF YOUR FIRST MONTH. FREE SHIPPING ON U.S. ORDERS.
+    </div>
+
+    <header class="bg-white shadow-md relative">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <!-- Logo -->
+            <div class="text-3xl font-bold">ALCAMI</div>
+
+            <button id="mobile-menu-toggle" class="md:hidden text-gray-700 text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+    
+            <!-- Centered Navigation Menu -->
+            <nav id="menu" class="hidden md:flex space-x-6 absolute left-1/2 transform -translate-x-1/2">
+                <a class="text-gray-700 hover:text-yellow-600" href="#">Home</a>
+                <a class="text-gray-700 hover:text-yellow-600" href="#">Shop</a>
+                <a class="text-gray-700 hover:text-yellow-600" href="#">Elements</a>
+                <a class="text-gray-700 hover:text-yellow-600" href="#">About Us</a>
+                <a class="text-gray-700 hover:text-yellow-600" href="#">Blog</a>
+                <a class="text-gray-700 hover:text-yellow-600" href="#">Contact</a>
+            </nav>
+    
+            <!-- Right Side: Search Icon & Button -->
+            <div class="flex items-center space-x-4">
+                <button id="search-toggle">
+                    <i class="fas fa-search text-gray-700 cursor-pointer text-lg"></i>
+                </button>
+                <button class="bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-yellow-600">
+                    Try Alcami <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Search Overlay (Initially Hidden) -->
+        <div id="search-container"
+            class="hidden absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full flex justify-center items-center bg-white  shadow-lg px-6 py-3">
+            
+            <h1 class="text-3xl font-bold " style="padding-right: 80px;">ALCAMI</h1>
+            <!-- Search Input -->
+            <input type="text" id="search-input" placeholder="Search for Products..."
+                class="w-3/4 md:w-1/2 px-4 py-2 border border-gray-300 rounded-full outline-none shadow-md bg-[#D9D9D9]">
+    
+            <!-- Icons inside search overlay -->
+            <div class="flex items-center space-x-4 ml-4">
+                <button id="search-toggle-overlay">
+                    <i class="fas fa-search text-gray-700 cursor-pointer text-lg"></i>
+                </button>
+                <button class="bg-yellow-500 text-white px-4 py-2 rounded-full hover:bg-yellow-600">
+                    Try Alcami <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Initially Hidden) -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 w-full bg-white shadow-lg py-4">
+        <a class="block text-gray-700 hover:text-yellow-600 px-6 py-2" href="#">Home</a>
+        <a class="block text-gray-700 hover:text-yellow-600 px-6 py-2" href="#">Shop</a>
+        <a class="block text-gray-700 hover:text-yellow-600 px-6 py-2" href="#">Elements</a>
+        <a class="block text-gray-700 hover:text-yellow-600 px-6 py-2" href="#">About Us</a>
+        <a class="block text-gray-700 hover:text-yellow-600 px-6 py-2" href="#">Blog</a>
+        <a class="block text-gray-700 hover:text-yellow-600 px-6 py-2" href="#">Contact</a>
+    </div>
+
+    </header>
+
+    <main class="container mx-auto mt-10 px-6">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2">
+                <div class="flex items-center mb-4 px-4 py-2 rounded-full"
+                    style="background: linear-gradient(90.05deg, rgba(198, 196, 196, 0.36) 0.04%, rgba(252, 252, 252, 0.12) 102.54%);margin-bottom: 25px; ">
+
+                    <span class="bg-white text-black px-2 py-1 rounded-full text-sm font-semibold">
+                        ⭐ 4.8 star rating
+                    </span>
+
+                    <span class="ml-2 text-gray-600">
+                        awarded the top adaptogen blend in the world
+                    </span>
+                </div>
+
+                <h1 class="text-4xl font-bold text-gray-800 mb-4" style="margin-bottom:50px; font-size:50px">Achieve
+                    your highest self.</h1>
+
+                <div class="flex space-x-8 mb-6">
+                    <div>
+                        <span class="text-4xl font-bold text-yellow-500" style="font-size: 72px;">10X</span>
+                        <p class="text-gray-600">concentration</p>
+                    </div>
+                    <div>
+                        <span class="text-4xl font-bold text-yellow-500"
+                            style="font-size: 72px; margin-left: 50px;">9</span>
+                        <p class="text-gray-600">powerful ingredients</p>
+                    </div>
+                    <div>
+                        <span class="text-4xl font-bold text-yellow-500" style="font-size: 72px; ">1000 mg</span>
+
+                        <p class="text-gray-600">of Adaptogens per dose</p>
+                    </div>
+                </div>
+
+                <button class="bg-yellow-500 text-white px-6 py-3 rounded-full hover:bg-yellow-600"
+                    style="margin-top:30px;">
+                    Shop Now <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+
+            <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+                <img alt="Alcami Products" class="w-full" src="assets/Group 1000004274.png" />
+            </div>
+        </div>
+
+        <div class="mt-10 text-center">
+            <div class="bg-white border-2 border-yellow-600 text-yellow-600 rounded-md py-4 px-6 inline-block w-full max-w-lg"
+                style="width: 912px; height: 61px; margin-bottom: 100px; margin-top: 30px; ">
+
+                Incredible Taste And Effects You Can Feel
+            </div>
+        </div>
+
+        <div class="container" style="padding-bottom: 100px;">
+            <div class="product-section">
+                <img src="assets/Group 1000004277.png" alt="Alcami Product" class="product-img">
+
+            </div>
+            <div class="description">
+                <h2 class="text-transparent bg-clip-text bg-gradient-to-r from-[#A27533] to-[#FAC568] text-2xl "
+                    style="font-size: 24px; padding-bottom: 20px;">9 POWERFUL ELEMENTS</h2>
+                <p style="font-size: 36px;padding-bottom: 30px;">All of the Best Ingredients,<br> None of the Compromise
+                </p>
+                <p style="font-size: 21px; padding-bottom: 30px;">Alcami uses <strong>x10 potency</strong> in every
+                    serving, formulated for
+                    maximum absorption to ensure your body gets the most out of every scoop.</p>
+                <a href="#" class="btn">View full ingredients →</a>
+            </div>
+        </div>
+        <!-- guarantee section -->
+        <div class="guarantee-section">
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <i><img src="assets/fi_766736.png" alt="" style="width: 50px;"></i>
+                <div style="display: flex; flex-direction: column;">
+                    30-day Guarantee
+                    <span style="opacity: 0.5;">Love Alcami or send it back</span>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <i><img src="assets/fi_4320263.png" alt="" style="width: 50px;"></i>
+                <div style="display: flex; flex-direction: column;">
+                    Worldwide Shipping
+                    <span style="opacity: 0.5;">Alcami ships everywhere</span>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <i><img src="assets/fi_766736 (1).png" alt="" style="width: 50px;"></i>
+                <div style="display: flex; flex-direction: column;">
+                    Fast Delivery
+                    <span style="opacity: 0.5;">On time quick shipping</span>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <i><img src="assets/fi_4337728.png" alt="" style="width: 50px;"></i>
+                <div style="display: flex; flex-direction: column;">
+                    Eco Certified
+                    <span style="opacity: 0.5;">Carbon neutral eco packing</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white text-gray-800" style="margin-top:100px">
+            <div class="container mx-auto p-4">
+                <!-- As Seen In Section -->
+                <div class="flex justify-center space-x-16 mb-8">
+                    <div>
+                        <h3 style="font-size: 20px;"><b>AS SEEN IN</b></h3>
+                    </div>
+                    <img alt="Fast Company logo" height="20" src="assets/Mask group.png" width="150" />
+                    <img alt="Forbes logo" height="40" src="assets/Mask group (1).png" width="150" />
+                    <img alt="Goop logo" height="40" src="assets/Mask group (2).png" width="150" />
+                    <img alt="Time logo" height="40" src="assets/Mask group (3).png" width="150" />
+                    <img alt="The New York Times logo" height="40" src="assets/Mask group (4).png" width="150" />
+                </div>
+                <!-- Main Content Section -->
+                <div class="flex flex-col lg:flex-row" style="margin-top: 70px;">
+                    <!-- Left Section -->
+                    <div class="lg:w-1/2 p-4">
+                        <div class="bg-gray-100 p-4 rounded-lg shadow-lg">
+                            <div class="relative">
+                                <img alt="Alcami Elements product image" class="mx-auto" height="400"
+                                    src="assets/Group 1000004149.png" width="400" />
+                                <div class="absolute top-0 left-0 p-2 bg-white rounded-full shadow-md">
+                                    <img alt="Organic icon" height="40"
+                                        src="https://storage.googleapis.com/a1aa/image/PUYt12GpueMayEEmQTgwwtNLHwBjlS9WVJZ7UzDhJyg.jpg"
+                                        width="40" />
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <button class="p-2 bg-gray-200 rounded-full">
+                                    <i class="fas fa-chevron-left">
+                                    </i>
+                                </button>
+                                <button class="p-2 bg-gray-200 rounded-full">
+                                    <i class="fas fa-chevron-right">
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="grid grid-cols-4 gap-4 mt-4">
+                                <img alt="Product thumbnail 1" class="rounded-lg" height="60"
+                                    src="assets/Rectangle 6683.png" width="60" />
+                                <img alt="Product thumbnail 2" class="rounded-lg" height="60"
+                                    src="assets/Rectangle 6684.png" width="60" />
+                                <img alt="Product thumbnail 3" class="rounded-lg" height="60"
+                                    src="assets/Rectangle 6683.png" width="60" />
+                                <img alt="Product thumbnail 4" class="rounded-lg" height="60"
+                                    src="assets/Rectangle 6686.png" width="60" />
+                                <img alt="Product thumbnail 5" class="rounded-lg" height="60"
+                                    src="assets/green-small.png" width="60" />
+                                <img alt="Product thumbnail 5" class="rounded-lg" height="60"
+                                    src="assets/green2_1 1.png" width="60" />
+                                <img alt="Product thumbnail 5" class="rounded-lg" height="60"
+                                    src="assets/brown_small.png" width="60" />
+                                <img alt="Product thumbnail 5" class="rounded-lg" height="60"
+                                    src="assets/green2_1 3.png" width="60" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Section -->
+                    <div class="lg:w-1/2 p-4">
+                        <h1 class="text-2xl font-bold mb-2">
+                            Alcami Elements
+                        </h1>
+                        <div class="flex items-center mb-4">
+                            <span class="text-yellow-500">
+                                <i class="fas fa-star">
+                                </i>
+                            </span>
+                            <span class="text-yellow-500">
+                                <i class="fas fa-star">
+                                </i>
+                            </span>
+                            <span class="text-yellow-500">
+                                <i class="fas fa-star">
+                                </i>
+                            </span>
+                            <span class="text-yellow-500">
+                                <i class="fas fa-star">
+                                </i>
+                            </span>
+                            <span class="text-yellow-500">
+                                <i class="fas fa-star-half-alt">
+                                </i>
+                            </span>
+                            <span class="ml-2 text-gray-600">
+                                (4,709 reviews)
+                            </span>
+                        </div>
+                        <p class="mb-4">
+                            Discover the ancient wisdom supported by modern science, all within the synergy of Alcami
+                            Elements. Designed for those who aspire to elevate every facet of life with awareness and
+                            intention.
+                        </p>
+                        <h2 class="text-lg font-semibold mb-2">
+                            Choose a flavor
+                        </h2>
+                        <div class="flex space-x-4 mb-4">
+                            <div class="border-2 border-yellow-500 p-2 rounded-lg">
+                                <img alt="Original flavor" class="mb-2" height="90" src="assets/9 2.png" width="80" />
+                                <p class="text-center">
+                                    Original
+                                </p>
+                            </div>
+                            <div class="border-2 border-gray-200 p-2 rounded-lg">
+                                <img alt="Matcha flavor" class="mb-2" height="90" src="assets/green1_1 1.png"
+                                    width="80" />
+                                <p class="text-center">
+                                    Matcha
+                                </p>
+                            </div>
+                            <div class="border-2 border-gray-200 p-2 rounded-lg">
+                                <img alt="Cacao flavor" class="mb-2" height="90" src="assets/green2_1 2.png"
+                                    width="80" />
+                                <p class="text-center">
+                                    Cacao
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-lg shadow-lg mb-4">
+                            <!-- Most Popular Section -->
+                            <div class="p-4 rounded-lg shadow-lg bg-gradient-to-r from-[#A27533] to-[#FAC568]">
+                                <h3 class="text-lg font-semibold text-white " style="text-align: center ;">Most Popular
+                                </h3>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-md">
+                                <div class="flex justify-between items-center mb-4">
+                                    <div class="flex items-center">
+                                        <span
+                                            class="w-4 h-4 border-2 border-yellow-500 flex items-center justify-center rounded-full mr-2">
+                                            <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+                                        </span>
+                                        <p class="text-[24px] font-light">Single Kit Subscription</p>
+                                    </div>
+                                    <p class="text-lg font-bold text-yellow-500">
+                                        $37 USD <span class="line-through text-gray-500">$46</span>
+                                    </p>
+                                </div>
+
+                                <p class="text-sm font-semibold mb-2">What's included:</p>
+
+                                <!-- Image Section -->
+                                <div class="grid grid-cols-5 gap-4 mb-4">
+                                    <!-- Left Side (Smaller) -->
+                                    <div
+                                        class="relative flex justify-center items-center border-2 border-black border-opacity-50 rounded-lg p-2 col-span-2 h-49">
+                                        <h3 class="absolute top-2 left-2 text-black " style="opacity: 0.5;">Every 30
+                                            days</h3>
+                                        <img alt="Product image 1" class="rounded-lg w-[90%] h-[90%] object-cover"
+                                            src="assets/Group 1000004093.png" />
+                                    </div>
+
+                                    <!-- Right Side (Larger) -->
+                                    <div
+                                        class="relative flex justify-center items-center border-2 border-black border-opacity-50 rounded-lg p-2 col-span-3 h-58">
+                                        <h3 class="absolute top-2 left-2 text-black font-bold" style="opacity: 0.5;">One
+                                            Time <span class="text-[#FFB545]">(free)</span></h3>
+                                        <img alt="Product image 3" class="rounded-lg w-[90%] h-[80%] object-cover"
+                                            src="assets/Group 1000004276.png" />
+                                    </div>
+                                </div>
+
+
+                                <!-- Benefits with Tick Marks -->
+                                <ul class="text-sm list-none mb-4 space-y-2">
+                                    <li class="flex items-center"><span class="text-black-500">✔</span
+                                            style="padding-right:10px;"> 30 Servings Shipped Monthly</li>
+                                    <li class="flex items-center"><span class="text-black-500">✔</span> Free Golden Kit
+                                        Bottle + Spoon ($28 Value)</li>
+                                    <li class="flex items-center"><span class="text-black-500">✔</span> Free Ebook on
+                                        Benefits of Alcami Elements ($12 Value)</li>
+                                    <li class="flex items-center"><span class="text-black-500">✔</span> 10% OFF Shipping
+                                        (Save $7-$10)</li>
+                                    <li class="flex items-center"><span class="text-black-500">✔</span> Pause or Cancel
+                                        Anytime After 3 Months</li>
+                                    <li class="flex items-center"><span class="text-black-500">✔</span> 90 Day Money
+                                        Back Guarantee</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Double Kit Subscription -->
+                        <div class="bg-white p-4 rounded-lg shadow-md mt-4">
+                            <div class="flex justify-between items-center mb-4">
+                                <p class="text-lg font-bold flex items-center">
+                                    <span class="w-4 h-4 border-2 border-yellow-500 rounded-full mr-2"></span> Double
+                                    Kit Subscription
+                                </p>
+                                <p class="text-lg font-bold text-yellow-500">
+                                    $68 USD <span class="line-through text-gray-500">$83</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Try Once -->
+                        <div class="bg-white p-4 rounded-lg shadow-md mt-4">
+                            <div class="flex justify-between items-center mb-4">
+                                <p class="text-lg font-bold flex items-center">
+                                    <span class="w-4 h-4 border-2 border-yellow-500 rounded-full mr-2"></span> Try Once
+                                </p>
+                                <p class="text-lg font-bold text-yellow-500">$46 USD</p>
+                            </div>
+                        </div>
+
+                        <!-- Add to Cart Button -->
+                        <button
+                            class="w-full bg-[#667744] text-white py-3 rounded-lg font-bold flex justify-center items-center mt-4">
+                            Add to Cart <span class="ml-2">➡</span>
+                        </button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="bg-white text-gray-800" style="padding-top: 30px;">
+            <div class="container mx-auto p-6">
+                <!-- Certification Icons -->
+                <div class="flex justify-center space-x-6 mb-6" style="padding-bottom: 100px;">
+                    <img src="assets/Frame 1000004226.png">
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center md:items-start mb-10 w-full">
+                    <img src="assets/Group 1000004262.png" class="w-full md:w-1/3 object-contain"
+                        alt="Himalayan Shilajit">
+                    <div class="md:w-2/3 md:pl-10">
+                        <h1 class="text-4xl font-bold">Himalayan Shilajit</h1>
+                        <p class="text-lg text-gray-500 mb-6">Nature's Ultimate Adaptogen</p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Benefit 1 -->
+                            <div class="bg-gray-100 p-6 rounded-xl shadow-md flex items-center space-x-4">
+                                <i><img src="assets/Asset 1 2.png"></i>
+                                <div>
+                                    <h2 class="text-xl font-semibold">Boosts Energy</h2>
+                                    <p class="text-sm">Shilajit enhances vitality, supporting increased energy levels,
+                                        physical endurance, and overall stamina..</p>
+                                </div>
+                            </div>
+
+                            <!-- Benefit 2 -->
+                            <div class="bg-gray-100 p-6 rounded-xl shadow-md flex items-center space-x-4">
+                                <i><img src="assets/Bone Health 1.png"></i>
+                                <div>
+                                    <h2 class="text-xl font-semibold">Bone & Men's Health</h2>
+                                    <p class="text-sm">Shilajit provides essential minerals for strong bones and has
+                                        traditional uses in supporting men's reproductive health and testosterone levels
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Benefit 3 -->
+                            <div class="bg-gray-100 p-6 rounded-xl shadow-md flex items-center space-x-4">
+                                <i><img src="assets/Group 1000004234.png"></i>
+                                <div>
+                                    <h2 class="text-xl font-semibold">Cognitive Function</h2>
+                                    <p class="text-sm">Shilajit may improve mental clarity, focus, and memory while
+                                        helping the body adapt to stress, enhancing overall resilience.</p>
+                                </div>
+                            </div>
+
+                            <!-- Benefit 4 -->
+                            <div class="bg-gray-100 p-6 rounded-xl shadow-md flex items-center space-x-4">
+                                <i><img src="assets/Immunity 1.png"></i>
+                                <div>
+                                    <h2 class="text-xl font-semibold">Immune Support</h2>
+                                    <p class="text-sm">Rich in antioxidants, Shilajit aids in reducing oxidative stress,
+                                        boosting the immune system, and promoting skin health for a youthful appearance
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call-to-Action Button -->
+                <div class="text-center mt-8">
+                    <button
+                        class="bg-yellow-500 text-white px-20 py-3 rounded-full shadow-md hover:bg-yellow-600 transition duration-300">
+                        Try Shilajit <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bg-gray-50">
+            <!-- Subscription Section -->
+            <section class="bg-gray-50  bg-center " style="background-image: url('assets/Rectangle 6719.png');padding: 10px;margin-top: 50px;background-repeat: no-repeat;">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2"style="padding:90px">
+                        <h2 class="text-sm text-yellow-600 font-semibold mb-2">
+                            SUBSCRIPTION
+                        </h2>
+                        <h1 class="text-3xl font-bold mb-4">
+                            Subscribe &amp; save
+                            <span class="font-extrabold">
+                                20%
+                            </span>
+                            + free <br> frother and bottle and spoon
+                        </h1>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">
+                                LASER FOCUS
+                            </span>
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">
+                                SUSTAINED ENERGY
+                            </span>
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">
+                                CLEAR MIND
+                            </span>
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">
+                                IMPROVED MOOD
+                            </span>
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">
+                                NO CAFFEINE
+                            </span>
+                            <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">
+                                CALM BALANCE
+                            </span>
+                        </div>
+                        <button
+                            class="bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-600 transition duration-300">
+                            Subscribe Now
+                            <i class="fas fa-arrow-right ml-2">
+                            </i>
+                        </button>
+                    </div>
+                   
+                </div>
+            </section>
+            
+            <!-- Morning Ritual Section -->
+            <section class="bg-white rounded-lg shadow-md p-8 mx-4 my-8">
+                <div class="flex flex-col md:flex-row items-center gap-20">
+                    
+                    <!-- Text Section -->
+                    <div class="md:w-1/2 flex flex-col justify-center gap-4">
+                        <h2 class="text-3xl font-bold mb-4">
+                            Your morning ritual, <br>made to awaken your mind.
+                        </h2>
+                        <p class="text-gray-600 mb-6">
+                            Transform your mornings with a simple, potent, and powerful ritual that fuels your day.
+                        </p>
+            
+                        <!-- Bullet Points -->
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-10">
+                                <h3 class="text-6xl font-bold text-gray-800 opacity-30 leading-none">
+                                    1
+                                </h3>
+                                <div>
+                                    <h4 class="text-xl font-semibold mb-1 text-[#FFD700]">
+                                        Prep your favorite drink
+                                    </h4>
+                                    <p class="text-gray-600">
+                                        Start your morning with your favorite beverage, whether it's a nutrient-packed smoothie
+                                        or a warm cup of tea.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-10">
+                                <h3 class="text-6xl font-bold text-gray-800 opacity-30 leading-none">
+                                    2
+                                </h3>
+                                <div>
+                                    <h4 class="text-xl font-semibold mb-1 text-[#FFD700]">
+                                        Take a scoop
+                                    </h4>
+                                    <p class="text-gray-600">
+                                        Simply add one potent scoop packed with x10 the potency to boost energy, enhance
+                                        clarity, and support wellness all day.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-10">
+                                <h3 class="text-6xl font-bold text-gray-800 opacity-30 leading-none ">
+                                    3
+                                </h3>
+                                <div>
+                                    <h4 class="text-xl font-semibold mb-1 text-[#FFD700]">
+                                        Customize and mix
+                                    </h4>
+                                    <p class="text-gray-600">
+                                        Personalize your morning drink. Stir well for a perfectly blended, nutrient-rich
+                                        beverage that awakens your mind and prepares you for the day.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Button -->
+                        <button class="bg-yellow-500 text-white px-2 py-3 rounded-full font-semibold mt-6 hover:bg-yellow-600 transition duration-300">
+                            See how people are using Alcami
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+            
+                    <!-- Image Section -->
+                    <div class="md:w-1/3 mt-6 md:mt-0 flex justify-end">
+                        <div class="relative">
+                            <img alt="Person explaining the product with various ingredients on the table"
+                                class="rounded-lg shadow-md w-full" 
+                                src="assets/image 163.png" />
+                            <button class="absolute inset-0 flex items-center justify-center text-white text-4xl">
+                                <i class="fas fa-play-circle"></i>
+                            </button>
+                        </div>
+                    </div>
+            
+                </div>
+            </section>
+            
+        </div>
+
+        <div class="bg-gray-50 "style="width:100%;">
+            <div class="bg-cover bg-center h-64" style="background-image: url('assets/Frame 1000003852.png');">
+                <div class="flex justify-around items-center h-full text-white text-center gap-20 ">
+                    <div>
+                        <p class="text-4xl font-bold">
+                            84%
+                        </p>
+                        <p>
+                            Reported increased <br>
+                            energy throughout their day
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-4xl font-bold">
+                            78%
+                        </p>
+                        <p>
+                            Reported feeling<br> more focused
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-4xl font-bold">
+                            89%
+                        </p>
+                        <p>
+                            Reported a sense of<br> calmness &amp; steady mood
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-4xl font-bold">
+                            90%
+                        </p>
+                        <p>
+                            Reported feeling an overall increased<br> wellness in their mental and physical health
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center my-12">
+                <p class="text-2xl">
+                    ---
+                </p>
+                <h1 class="text-3xl font-bold mt-4">
+                    Why Alcami is the #1 Choice for your Productivity and Performance
+                </h1>
+            </div>
+            <div class="container mx-auto px-4">
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white border-collapse">
+                        <thead>
+                            <tr class="border-b border-black">
+
+                                <th class="py-4 px-6 "style="text-align:left;">BENEFITS</th>
+                                <th class="py-4 px-6 text-center bg-[#F0EEE6]">
+                                    <img alt="Alcami product image" class="mx-auto w-[100px] h-[150px]" src="assets/9 2.png"/>
+                                    <p class="mt-1 opacity-50">ALCAMI</p>
+                                </th>
+                                <th class="py-4 px-6 text-center">
+                                    <img alt="MUD\WTR product image" class="mx-auto w-[100px] h-[150px]" src="assets/31Yo+tgyOlL._SY300_SX300_ 1.png"/>
+                                    <p class="mt-1 opacity-50">MUD/WTR</p>
+                                </th>
+                                <th class="py-4 px-6 text-center">
+                                    <img alt="Ritual product image" class="mx-auto w-[100px] h-[150px]" src="assets/71apr2WjcPL.__AC_SX300_SY300_QL70_FMwebp_ 1.png"/>
+                                    <p class="mt-1 opacity-50">RYZE</p>
+                                </th>
+                                <th class="py-4 px-6 text-center">
+                                    <img alt="Everyday Dose product image" class="mx-auto w-[100px] h-[150px]" src="assets/71pgZLjoKuL._SX679_ 1.png"/>
+                                    <p class="mt-1 opacity-50">EVERYDAY DOSE</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-black">
+                                <td class="py-4 px-6">Potency Concentration</td>
+                                <td class="py-4 px-6 text-center bg-[#F0EEE6]">10x</td>
+                                <td class="py-4 px-6 text-center">1x</td>
+                                <td class="py-4 px-6 text-center">1x</td>
+                                <td class="py-4 px-6 text-center">10x</td>
+                            </tr>
+                            <tr class="border-b border-black bg-gray-50">
+                                <td class="py-4 px-6">Extracts Concentrates</td>
+                                <td class="py-4 px-6 text-center bg-[#F0EEE6] flex justify-center items-center">
+                                    <img src="assets/Frame 1000004036.svg" class="w-6 h-6">
+                                </td>
+                               
+                                <td class="py-4 px-6 text-center opacity-30" style="padding-left:65px;">
+                                    <div class="w-6 h-6 flex justify-center items-center border border-black rounded-full" >
+                                        <i class="fas fa-times text-black"></i>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-6 text-center opacity-30" style="padding-left:65px;">
+                                    <div class="w-6 h-6 flex justify-center items-center border border-black rounded-full" >
+                                        <i class="fas fa-times text-black"></i>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-6 text-center opacity-30" style="padding-left:65px;">
+                                    <div class="w-6 h-6 flex justify-center items-center border border-black rounded-full" >
+                                        <i class="fas fa-check text-black"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                            <tr class="border-b border-black">
+                                <td class="py-4 px-6">Effects You Can Feel</td>
+                                <td class="py-4 px-6 text-center bg-[#F0EEE6] flex justify-center items-center">
+                                    <img src="assets/Frame 1000004036.svg" class="w-6 h-6">
+                                </td>
+                                <td class="py-4 px-6 text-center opacity-30" style="padding-left:65px;">
+                                    <div class="w-6 h-6 flex justify-center items-center border border-black rounded-full" >
+                                        <i class="fas fa-times text-black"></i>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-6 text-center opacity-30" style="padding-left:65px;">
+                                    <div class="w-6 h-6 flex justify-center items-center border border-black rounded-full" >
+                                        <i class="fas fa-times text-black"></i>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-6 text-center opacity-30" style="padding-left:65px;">
+                                    <div class="w-6 h-6 flex justify-center items-center border border-black rounded-full" >
+                                        <i class="fas fa-times text-black"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="border-b border-black bg-gray-50">
+                                <td class="py-4 px-6">8 of Beneficial Ingredients</td>
+                                <td class="py-4 px-6 text-center bg-[#F0EEE6]"><h3 class="opacity-40">9</h3></td>
+                                <td class="py-4 px-6 text-center"><h3 class="opacity-40">5</h3></td>
+                                <td class="py-4 px-6 text-center"><h3 class="opacity-40">6</h3></td>
+                                <td class="py-4 px-6 text-center"><h3 class="opacity-40">2</h3></td>
+                            </tr>
+                            <tr class="border-b border-black">
+                                <td class="py-4 px-6">Incredible Taste</td>
+                                <td class="py-4 px-6 text-center bg-[#F0EEE6] flex justify-center items-center">
+                                    <img src="assets/Frame 1000004036.svg" class="w-6 h-6">
+                                </td>
+                                <td class="py-4 px-6 text-center opacity-30" style="padding-left:65px;">
+                                    <div class="w-6 h-6 flex justify-center items-center border border-black rounded-full" >
+                                        <i class="fas fa-times text-black"></i>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-6 text-center opacity-30" style="padding-left:65px;">
+                                    <div class="w-6 h-6 flex justify-center items-center border border-black rounded-full" >
+                                        <i class="fas fa-times text-black"></i>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-6 text-center opacity-30" style="padding-left:65px;">
+                                    <div class="w-6 h-6 flex justify-center items-center border border-black rounded-full" >
+                                        <i class="fas fa-times text-black"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="border-b border-black bg-gray-50">
+                                <td class="py-4 px-6">No Caffeine</td>
+                                <td class="py-4 px-6 text-center bg-[#F0EEE6] flex justify-center items-center">
+                                    <img src="assets/Frame 1000004036.svg" class="w-6 h-6">
+                                </td>
+                                <td class="py-4 px-6 text-center opacity-30" style="padding-left:65px;">
+                                    <div class="w-6 h-6 flex justify-center items-center border border-black rounded-full" >
+                                        <i class="fas fa-times text-black"></i>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-6 text-center opacity-30" style="padding-left:65px;">
+                                    <div class="w-6 h-6 flex justify-center items-center border border-black rounded-full" >
+                                        <i class="fas fa-times text-black"></i>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-6 text-center opacity-30" style="padding-left:65px;">
+                                    <div class="w-6 h-6 flex justify-center items-center border border-black rounded-full" >
+                                        <i class="fas fa-times text-black"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="border-b border-black">
+                                <td class="py-4 px-6">No Starch or Myceliated Oats</td>
+                                <td class="py-4 px-6 text-center bg-[#F0EEE6] flex justify-center items-center">
+                                    <img src="assets/Frame 1000004036.svg" class="w-6 h-6">
+                                </td>
+                                <td class="py-4 px-6 text-center opacity-30" style="padding-left:65px;">
+                                    <div class="w-6 h-6 flex justify-center items-center border border-black rounded-full" >
+                                        <i class="fas fa-check text-black"></i>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-6 text-center opacity-30" style="padding-left:65px;">
+                                    <div class="w-6 h-6 flex justify-center items-center border border-black rounded-full" >
+                                        <i class="fas fa-times text-black"></i>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-6 text-center opacity-30" style="padding-left:65px;">
+                                    <div class="w-6 h-6 flex justify-center items-center border border-black rounded-full" >
+                                        <i class="fas fa-times text-black"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="border-b border-black bg-gray-50">
+                                <td class="py-4 px-6">100% Fruiting Body Mushroom</td>
+                                <td class="py-4 px-6 text-center bg-[#F0EEE6] flex justify-center items-center">
+                                    <img src="assets/Frame 1000004036.svg" class="w-6 h-6">
+                                </td>
+                                <td class="py-4 px-6 text-center opacity-30" style="padding-left:65px;">
+                                    <div class="w-6 h-6 flex justify-center items-center border border-black rounded-full" >
+                                        <i class="fas fa-check text-black"></i>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-6 text-center opacity-30" style="padding-left:65px;">
+                                    <div class="w-6 h-6 flex justify-center items-center border border-black rounded-full" >
+                                        <i class="fas fa-times text-black"></i>
+                                    </div>
+                                </td>
+                                <td class="py-4 px-6 text-center opacity-30" style="padding-left:65px;">
+                                    <div class="w-6 h-6 flex justify-center items-center border border-black rounded-full" >
+                                        <i class="fas fa-check text-black"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white text-gray-800" style="width: 100%;">
+            <!-- Header Section -->
+            <div class="text-center py-8">
+                <button
+                class="text-black font-bold py-2 px-14 rounded-full hover:opacity-90 transition duration-300"
+                style="background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);">
+                    Try It Risk-Free <span>➜</span>
+                </button>
+            </div>
+            <!-- Video Section -->
+            <div class="flex justify-center">
+                <div class="w-full max-w-4xl p-4">
+                    <div class="relative">
+                        <img alt="Video thumbnail showing a person with a natural background" class="w-full rounded-lg"
+                            
+                            src="assets/image.png"
+                           style="height: 400px;width:100%;"/>
+                           <button class="absolute inset-0 flex items-center justify-center">
+                            <svg width="50" height="50" viewBox="0 0 100 100" class="text-yellow-500">
+                                <circle cx="50" cy="50" r="48" stroke="none" class="fill-current" />
+                                <polygon points="38,30 75,50 38,70" fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- From the Founders Section -->
+            <div class="grid grid-cols-2 gap-3 items-center justify-center max-w-4xl mx-auto py-8">
+                <!-- Left Column: Title + Button -->
+                <div class="flex flex-col items-start">
+                    <h2 class="text-2xl font-bold"style="margin-bottom:30px;">From the Founders</h2>
+                    <button
+                    class="text-black font-bold py-2 px-14 rounded-full hover:opacity-90 transition duration-300"
+                    style="background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);">
+                        About Us <span>➜</span>
+                    </button>
+                </div>
+            
+                <!-- Right Column: Paragraph -->
+                <p class="text-gray-600">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Consectetur adipiscing elit, sed do eiusmod.
+                </p>
+            </div>
+            
+            
+            
+            <!-- Testimonials Section -->
+            <div class="bg-white-100 py-12">
+                <div class="bg-[#F0EEE6] p-6">
+                <div class="text-left mb-8" style="padding-left:150px ;">
+                    <h2 class="text-2xl font-bold">
+                        What our customers are saying
+                    </h2>
+                    <p class="text-gray-600">
+                        Real people, real reviews.
+                    </p>
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="w-full max-w-6xl">
+                        <div class="flex items-center justify-between mb-4">
+                            <button class="text-gray-600 hover:text-gray-800 transition duration-300">
+                                <i class="fas fa-chevron-left">
+                                </i>
+                            </button>
+                            <button class="text-gray-600 hover:text-gray-800 transition duration-300">
+                                <i class="fas fa-chevron-right">
+                                </i>
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- Testimonial 1 -->
+                            <div class="bg-white p-6 rounded-lg shadow">
+                                <div class="flex items-center mb-4">
+                                    <div class="text-green-500">
+                                        <i class="fas fa-star">
+                                        </i>
+                                        <i class="fas fa-star">
+                                        </i>
+                                        <i class="fas fa-star">
+                                        </i>
+                                        <i class="fas fa-star">
+                                        </i>
+                                        <i class="fas fa-star">
+                                        </i>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 mb-4">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+                                    eros elementum tristique. Duis cursus, mi quis viverra."
+                                </p>
+                                <div class="flex items-center">
+                                    <img alt="Customer profile picture" class="w-12 h-12 rounded-full mr-4" height="50"
+                                        src="https://storage.googleapis.com/a1aa/image/pR3AvmhqK0CeFRjTxqxfNpWTCbjZffb2SBqa4ZgX5X4.jpg"
+                                        width="50" />
+                                    <div>
+                                        <p class="font-bold">
+                                            Name Surname
+                                        </p>
+                                        <p class="text-gray-600">
+                                            Position, Company name
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Testimonial 2 -->
+                            <div class="bg-white p-6 rounded-lg shadow">
+                                <div class="flex items-center mb-4">
+                                    <div class="text-green-500">
+                                        <i class="fas fa-star">
+                                        </i>
+                                        <i class="fas fa-star">
+                                        </i>
+                                        <i class="fas fa-star">
+                                        </i>
+                                        <i class="fas fa-star">
+                                        </i>
+                                        <i class="fas fa-star">
+                                        </i>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 mb-4">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+                                    eros elementum tristique. Duis cursus, mi quis viverra."
+                                </p>
+                                <div class="flex items-center">
+                                    <img alt="Customer profile picture" class="w-12 h-12 rounded-full mr-4" height="50"
+                                        src="https://storage.googleapis.com/a1aa/image/pR3AvmhqK0CeFRjTxqxfNpWTCbjZffb2SBqa4ZgX5X4.jpg"
+                                        width="50" />
+                                    <div>
+                                        <p class="font-bold">
+                                            Name Surname
+                                        </p>
+                                        <p class="text-gray-600">
+                                            Position, Company name
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Testimonial 3 -->
+                            <div class="bg-white p-6 rounded-lg shadow">
+                                <div class="flex items-center mb-4">
+                                    <div class="text-green-500">
+                                        <i class="fas fa-star">
+                                        </i>
+                                        <i class="fas fa-star">
+                                        </i>
+                                        <i class="fas fa-star">
+                                        </i>
+                                        <i class="fas fa-star">
+                                        </i>
+                                        <i class="fas fa-star">
+                                        </i>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 mb-4">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+                                    eros elementum tristique. Duis cursus, mi quis viverra."
+                                </p>
+                                <div class="flex items-center">
+                                    <img alt="Customer profile picture" class="w-12 h-12 rounded-full mr-4" height="50"
+                                        src="https://storage.googleapis.com/a1aa/image/pR3AvmhqK0CeFRjTxqxfNpWTCbjZffb2SBqa4ZgX5X4.jpg"
+                                        width="50" />
+                                    <div>
+                                        <p class="font-bold">
+                                            Name Surname
+                                        </p>
+                                        <p class="text-gray-600">
+                                            Position, Company name
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center mt-6">
+                            <div class="flex space-x-2">
+                                <button class="w-3 h-3 bg-gray-400 rounded-full">
+                                </button>
+                                <button class="w-3 h-3 bg-gray-400 rounded-full">
+                                </button>
+                                <button class="w-3 h-3 bg-gray-400 rounded-full">
+                                </button>
+                                <button class="w-3 h-3 bg-gray-400 rounded-full">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="font-sans antialiased">
+                    <div class="max-w-4xl mx-auto p-4">
+                        
+                        <!-- FAQ Section -->
+                        <section class="mb-8 max-w-4xl mx-auto grid grid-cols-2 gap-15 items-start"style="margin-top:70px;">
+                            <!-- Left Side: Title, Description & Button -->
+                            <div>
+                                <h1 class="text-2xl font-semibold mb-4">F.A.Qs</h1>
+                                <p class="mb-4">
+                                    If you have any question that isn't answered in our FAQs, we'd love to hear from you!
+                                </p>
+                                <button
+                    class="text-black font-bold py-2 px-14 rounded-full hover:opacity-90 transition duration-300"
+                    style="background: linear-gradient(93.63deg, #CAA648 -0.61%, #CAA648 10.09%, #D5B147 25.19%, #E4C267 46.69%, #E2C065 78.94%, #DBB95E 90.77%, #D0AE52 98.29%, #C09F41 104.74%, #BB9A3C 106.89%);">
+                        Get In Touch <span>➜</span>
+                    </button>
+                            </div>
+                        
+                            <!-- Right Side: FAQ Questions -->
+                            <div class="space-y-4">
+                                <div class="border-b border-gray-300 pb-2 flex justify-between items-center">
+                                    <span>If I subscribe can I cancel anytime?</span>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="border-b border-gray-300 pb-2 flex justify-between items-center">
+                                    <span>Can I take this at night?</span>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="border-b border-gray-300 pb-2 flex justify-between items-center">
+                                    <span>Where are your ingredients sourced from?</span>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="border-b border-gray-300 pb-2 flex justify-between items-center">
+                                    <span>Will this get me high?</span>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <div class="border-b border-gray-300 pb-2 flex justify-between items-center">
+                                    <span>Are you using fruiting bodies for your mushrooms?</span>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                <a class="text-gray-500 mt-4 inline-block " href="#" style="margin-left:170px ;">
+                                    See All FAQ's <span>→</span>
+                                </a>
+                            </div>
+                        </section>
+                        
+                        <!-- Subscription Section -->
+                        <section class="relative bg-cover bg-center p-8 rounded-lg text-center text-white" 
+                            style="background-image: url('assets/signup_image.jpeg');height: 500px;width: 100%;">
+    
+                         <!-- Black Overlay -->
+                         <div class="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
+
+                         <div class="relative z-10">
+                             <h2 class="font-semibold mb-10" style="font-size: 30px;">
+                                Sign up and receive up to 15% OFF <br>on your first order
+                             </h2>
+                            <p class="mb-4">
+                                Get weekly recipes, insights, and freebies when you sign up to our newsletter.
+                            </p>
+
+                         <!-- Input and Button stacked vertically -->
+                            <div class="flex flex-col items-center gap-4">
+                            <input type="email" placeholder="Enter your email"
+                             class="border border-white bg-transparent text-white py-2 px-4 rounded-md w-64 outline-none placeholder-white">
+            <button class="bg-white text-black py-2 px-12 rounded-full">
+                Subscribe <span>→</span>
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+                        
+
+            
+<footer class="py-4 bg-[#322D2D] text-white w-full" style="margin-top: 200px;">
+    <div class="max-w-7xl mx-auto px-6 w-full">
+        <!-- Footer Heading -->
+        <h1 class="text-3xl font-light tracking-widest mb-3 text-left">ALCAMI</h1>
+
+        <!-- Footer Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <!-- Column 1 -->
+            <div class="flex flex-col space-y-1">
+                <h3 class="text-md font-semibold">Quick Links</h3>
+                <a href="#" class="text-gray-300 hover:text-white">Home</a>
+                <a href="#" class="text-gray-300 hover:text-white">Shop</a>
+                <a href="#" class="text-gray-300 hover:text-white">Elements</a>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="flex flex-col space-y-1">
+                <h3 class="text-md font-semibold">Company</h3>
+                <a href="#" class="text-gray-300 hover:text-white">About Us</a>
+                <a href="#" class="text-gray-300 hover:text-white">Blog</a>
+                <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="flex flex-col space-y-1">
+                <h3 class="text-md font-semibold">Follow Us</h3>
+                <a href="#" class="text-gray-300 hover:text-white flex items-center space-x-1">
+                    <i class="fab fa-facebook"></i> <span>Facebook</span>
+                </a>
+                <a href="#" class="text-gray-300 hover:text-white flex items-center space-x-1">
+                    <i class="fab fa-instagram"></i> <span>Instagram</span>
+                </a>
+                <a href="#" class="text-gray-300 hover:text-white flex items-center space-x-1">
+                    <i class="fas fa-times"></i> <span>Twitter</span>
+                </a>
+            </div>
+
+            <!-- Column 4 (Newsletter) -->
+            <div class="flex flex-col space-y-2 md:col-span-1 w-[400px]">
+                <h3 class="text-md font-semibold text-yellow-500">Join our newsletter</h3>
+                <form class="flex space-x-2">
+                    <input type="email" placeholder="Enter your email"
+                        class="px-3 py-1 bg-transparent border border-white text-white rounded-md outline-none placeholder-gray-400 w-56">
+                    <button type="submit" class="bg-white text-black py-1 px-4 rounded-full font-semibold">
+                        Subscribe →
+                    </button>
+                </form>
+                <p class="text-xs text-gray-400">
+                    By subscribing, you agree to our <a href="#" class="underline">Privacy Policy</a>.
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="mt-4 text-left text-yellow-500 text-xs">
+            © 2024 ALCAMI ELEMENTS. ALL RIGHTS RESERVED.
+        </div>
+    </div>
+</footer>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
